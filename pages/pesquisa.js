@@ -55,10 +55,10 @@ const Pesquisa = () => {
   return (
     <div className="pt-6">
       <PageTitle title="Pesquisa" />
-      <h1 className="text-center text-2xl font-bold my-8">
+      <h1 className="text-center text-3xl font-bold my-8">
         Críticas e sugestões
       </h1>
-      <p className="text-center mb-6 mx-2 text-lg text-gray-700 font-medium">
+      <p className="w-10/12 text-center mb-6 mx-2 text-lg text-gray-900 font-medium mx-auto">
         O restaurante X sempre busca por atender melhor seus clientes. <br />
         Por isso, estamos sempre abertos a ouvir a sua opinião.
       </p>
@@ -72,7 +72,7 @@ const Pesquisa = () => {
             name="Nome"
             onChange={onChange}
             value={form.Nome}
-            className="px-4 py-2 block bg-yellow-100 placeholder-gray-500 opacity-70 rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
+            className="px-4 py-4 block bg-yellow-100 placeholder-gray-500 opacity-70 rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
           />
 
           <label className="font-bold mt-6 font-family: Roboto">E-mail:</label>
@@ -82,7 +82,7 @@ const Pesquisa = () => {
             name="Email"
             onChange={onChange}
             value={form.Email}
-            className="px-4 py-2 block bg-yellow-100 placeholder-gray-500 opacity-70 rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
+            className="px-4 py-4 block bg-yellow-100 placeholder-gray-500 opacity-70 rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
           />
 
           <label className="font-bold mt-6 font-family: Roboto">
@@ -94,18 +94,20 @@ const Pesquisa = () => {
             name="Whatsapp"
             onChange={onChange}
             value={form.Whatsapp}
-            className="px-4 py-2 block bg-yellow-100 placeholder-gray-500 opacity-70 
+            className="px-4 py-4 block bg-yellow-100 placeholder-gray-500 opacity-70 
             rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 
             focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
           />
 
-          <label className="font-bold mt-6 font-family: Roboto">Nota:</label>
+          <label className="font-bold mt-6 mb-4 font-family: Roboto">
+            Nota:
+          </label>
           <div className="flex justify-center mx-auto flex-wrap">
             {notas.map((nota) => {
               return (
                 <label
-                  className="flex flex-col w-1/6 px-4 py-2 text-gray-700 
-                font-bold text-center md:px-8"
+                  className="flex flex-col w-1/6 px-6 py-2 text-gray-900 
+                font-bold text-center mx-auto md:px-8"
                 >
                   {nota}
 
@@ -124,7 +126,7 @@ const Pesquisa = () => {
           <button
             onClick={save}
             className="bg-yellow-500 text-center font-bold text-white 
-            tracking-wide uppercase w-full py-2 mt-8 mx-auto rounded-md mb-4 
+            tracking-wide uppercase w-4/5 py-3 mt-8 mx-auto rounded-md mb-4 
             hover:bg-yellow-600 hover:shadow-lg lg:w-3/5"
           >
             Salvar

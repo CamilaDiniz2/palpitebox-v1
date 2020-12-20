@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <div>
       <PageTitle title="Home" />
-      <p className="text-black font-medium text-center m-8 text-lg font-family:Roboto">
+      <p className="w-9/12 text-black font-medium text-center mx-auto m-12 text-lg font-family:Roboto">
         O estabelecimento X sempre busca atender melhor os seus clientes. <br />
         Por isso estamos sempre abertos à ouvir sua opinião.
       </p>
@@ -25,12 +25,12 @@ const Index = () => {
       </div>
 
       {!data && (
-        <p className="text-black font-medium text-center m-8 text-lg font-family:Roboto">
+        <p className="text-black font-medium text-center m-12 text-lg font-family:Roboto">
           Carregando dados ...
         </p>
       )}
       {!error && data && data.showCoupon && (
-        <p className="text-black font-medium text-center w-2/5 mx-auto m-8 text-lg font-family:Roboto">
+        <p className="text-black font-medium text-center w-4/5 mx-auto m-12 text-lg font-family:Roboto md:2/5">
           {data.message}
         </p>
       )}
