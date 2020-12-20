@@ -1,0 +1,3 @@
+.wrapper {
+  @apply bg-yellow-500 p-4 shadow-md z-50;
+}

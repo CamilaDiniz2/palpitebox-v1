@@ -1,2 +1,2 @@
-# palpitebox-v1
-Aplicação Palpitebox desenvolvida com a tutoria do Túlio Faria (DevPleno)
+# palpitebox-devpleno
+Aplicação desenvolvida durante o curso Full Stack Master da DevPleno do professor Túlio Farias.
