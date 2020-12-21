@@ -19,7 +19,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="bg-gray-500 p-4 shadow-md text-center">
+      <div className="bg-gray-600 p-4 shadow-md text-center">
         <Link href="./sobre">
           <a className="px-4 text-white text-xl hover:text-opacity-75">Sobre</a>
         </Link>
