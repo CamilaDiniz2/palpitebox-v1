@@ -53,9 +53,16 @@ const Contato = () => {
         Configra nossa localização no mapa:
       </p>
       <iframe
-        className="mx-auto h-72 mb-8 md:w-7/12 md:h-96"
+        className="mx-auto h-72 md:w-7/12 md:h-96"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126409.61239529909!2d-34.99769985799821!3d-8.070813205983194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab196f88c446e5%3A0x3c9ef52922447fd4!2sRecife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1608564332742!5m2!1spt-BR!2sbr"
       ></iframe>
+      <p className="text-center mb-8 font-medium text-sm">
+        Mapa obtido através do
+        <a href="https://www.google.com/maps/" className="font-bold">
+          {' '}
+          Google Maps{' '}
+        </a>
+      </p>
     </div>
   );
 };
