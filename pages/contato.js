@@ -15,9 +15,9 @@ const Contato = () => {
         gente.
       </p>
 
-      <div className="flex flex-col items-start lg:flex-row-reverse lg:justify-center">
-        <div className="w-10/12 mx-auto mb-8 flex flex-col justify-center my-8 lg:w-1/2">
-          <p className="w-10/12 font-bold text-center mb-6 mx-2 text-lg text-gray-900 font-medium mx-auto md:text-2xl lg:text-left">
+      <div className="flex flex-col items-start md:flex-row-reverse md:justify-around">
+        <div className="w-10/12 mx-auto mb-8 flex flex-col justify-center my-8 md:w-1/2 md:items-center">
+          <p className="w-10/12 font-bold text-center mb-6 mx-2 text-lg text-gray-900 font-medium mx-auto md:text-2xl ">
             Nossos contatos:
           </p>
           <div className="p-8 bg-gray-200 border-b-2 border-t-2 border-yellow-500 flex items-center mb-4 lg:w-8/12 md:justify-center  lg:mt-6">
@@ -42,12 +42,12 @@ const Contato = () => {
           </div>
         </div>
 
-        <div className="w-11/12 mx-auto lg:w-1/2">
+        <div className="w-10/12 mx-auto md:w-1/2">
           <p className="w-10/12 font-bold text-center mt-8 mb-6 mx-2 text-lg text-gray-900 font-medium mx-auto md:text-2xl">
             Confira nossa localização no mapa:
           </p>
           <iframe
-            className="mx-auto h-80 lg:w-7/12 md:h-96"
+            className="w-full mx-auto h-96 md:w-10/12 md:h-96"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126409.61239529909!2d-34.99769985799821!3d-8.070813205983194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab196f88c446e5%3A0x3c9ef52922447fd4!2sRecife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1608564332742!5m2!1spt-BR!2sbr"
           ></iframe>
           <p className="text-center mb-8 font-medium text-sm">
