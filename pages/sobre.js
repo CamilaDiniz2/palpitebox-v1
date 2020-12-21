@@ -13,26 +13,26 @@ const Sobre = () => {
         lg:flex-row md:flex-wrap md:grid md:grid-cols-2 md:gap-8"
       >
         <div
-          className=" bg-yellow-500 mb-8 mx-auto cursor-default rounded-xl hover:shadow-lg 
-          hover:rounded-2xl hover:opacity-90 py-4 px-8 md:col-span-2"
+          className="bg-yellow-500 mb-8 mx-auto cursor-default rounded-xl hover:shadow-lg 
+          hover:rounded-2xl hover:opacity-90 md:col-span-2 py-4 px-8"
         >
-          <h2 className="font-bold text-2xl text-left text-white mb-4 font-family:Roboto">
+          <h2 className="font-bold text-2xl text-left text-white tracking-wider mb-2 pb-2 border-b-2 border-white">
             Missão
           </h2>
-          <p className="text-justify font-medium text-white italic tracking-wide">
-            Nossa missão é sit amet, consectetur adipiscing elit. Curabitur sem
+          <p className="text-justify font-medium text-white italic tracking-wide ">
+            "Nossa missão é sit amet, consectetur adipiscing elit. Curabitur sem
             massa, blandit vitae efficitur vitae, bibendum a magna. Sed
             condimentum luctus ornare. Nunc vehicula odio in arcu venenatis, a
             posuere ligula pharetra. Suspendisse egestas urna et nulla finibus
             malesuada. Fusce at ante in tellus consectetur fermentum eu eget
-            purus.
+            purus."
           </p>
         </div>
         <div
-          className="bg-yellow-500 mb-8 mx-auto rounded-xl py-4 px-8 
-          hover:shadow-2xl hover:opacity-90"
+          className="bg-yellow-500 mb-8 mx-auto 
+          rounded-xl hover:shadow-2xl hover:opacity-90 py-4 px-8"
         >
-          <h2 className="font-bold text-2xl text-left  text-white tracking-wider mb-2">
+          <h2 className="font-bold text-2xl text-left text-white tracking-wider mb-2 pb-2 border-b-2 border-white">
             Visão
           </h2>
           <p className="text-justify font-medium text-white italic tracking-wide">
@@ -45,13 +45,13 @@ const Sobre = () => {
           </p>
         </div>
         <div
-          className="bg-yellow-500 mb-8 mx-auto rounded-xl py-4 px-8 
-          hover:shadow-2xl hover:opacity-90"
+          className="bg-yellow-500 mb-8 mx-auto rounded-xl 
+          hover:shadow-2xl hover:opacity-90 py-4 px-8"
         >
-          <h2 className="font-bold text-2xl text-left text-white tracking-wider mb-2">
+          <h2 className="font-bold text-2xl text-left text-white tracking-wider mb-2 pb-2 border-b-2 border-white">
             Valores
           </h2>
-          <p className="text-justify font-medium text-white italic tracking-wide">
+          <p className="text-justify font-medium text-white italic tracking-wide ">
             "Nossos valores são sit amet, consectetur adipiscing elit. Curabitur
             sem massa, blandit vitae efficitur vitae, bibendum a magna. Sed
             condimentum luctus ornare. Nunc vehicula odio in arcu venenatis, a
