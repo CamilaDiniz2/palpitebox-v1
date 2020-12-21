@@ -6,6 +6,10 @@ const PageTitle = ({ title }) => {
     <Head>
       <title>{title} - PalpiteBox</title>
       <link rel="shortcut icon" href="/logo-palpitebox.png" />
+      <link
+        href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css"
+        rel="stylesheet"
+      />
     </Head>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaSave } from 'react-icons/fa';
 import PageTitle from '../components/PageTitle';
 
 const Pesquisa = () => {
@@ -125,11 +126,13 @@ const Pesquisa = () => {
 
           <button
             onClick={save}
-            className="bg-yellow-500 text-center font-bold text-white 
+            className="flex flex-row justify-center items-center bg-yellow-500 
+            text-center font-bold text-white 
             tracking-wide uppercase w-4/5 py-3 mt-8 mx-auto rounded-md mb-4 
             hover:bg-yellow-600 hover:shadow-lg lg:w-3/5"
           >
-            Salvar
+            <FaSave className="mr-2"></FaSave>
+            <span>Salvar</span>
           </button>
         </div>
       )}
