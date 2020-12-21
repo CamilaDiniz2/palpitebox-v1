@@ -13,7 +13,7 @@ const Sobre = () => {
         className="flex flex-col  w-9/12 mx-auto mb-8  
         lg:flex-row md:flex-wrap md:grid md:grid-cols-2 md:gap-8"
       >
-        <div className="bg-yellow-200 border-t-4 border-b-4 border-yellow-500 mb-8 mx-auto cursor-default rounded-lg md:col-span-2 py-4 px-8">
+        <div className="bg-yellow-300 border-t-4 border-b-4 border-yellow-500 mb-8 mx-auto cursor-default rounded-lg md:col-span-2 py-4 px-8">
           <h2
             className="font-bold text-2xl text-left text-black tracking-wider 
           mb-2 pb-2 border-b border-yellow-500"
@@ -30,7 +30,7 @@ const Sobre = () => {
           </p>
         </div>
         <div
-          className="mb-8 mx-auto bg-yellow-200 border-t-4 border-b-4 border-yellow-500 
+          className="mb-8 mx-auto bg-yellow-300 border-t-4 border-b-4 border-yellow-500 
           rounded-lg hover:shadow-2xl py-4 px-8"
         >
           <h2
@@ -49,7 +49,7 @@ const Sobre = () => {
           </p>
         </div>
         <div
-          className="mb-8 mx-auto bg-yellow-200 border-t-4 border-b-4 border-yellow-500 
+          className="mb-8 mx-auto bg-yellow-300 border-t-4 border-b-4 border-yellow-500 
           rounded-lg hover:shadow-2xl py-4 px-8"
         >
           <h2
