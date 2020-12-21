@@ -13,8 +13,8 @@ const Sobre = () => {
         lg:flex-row md:flex-wrap md:grid md:grid-cols-2 md:gap-8"
       >
         <div
-          className=" bg-yellow-300 mb-8 mx-auto cursor-default hover:shadow-lg 
-          hover:opacity-100 hover:bg-yellow-400 hover: rounded-xl py-4 px-8 md:col-span-2"
+          className=" bg-yellow-400 mb-8 mx-auto cursor-default hover:shadow-lg 
+          hover: rounded-2xl py-4 px-8 md:col-span-2"
         >
           <h2 className="font-bold text-2xl text-left text-gray-900 mb-4 fonto-family:Roboto">
             Missão
@@ -29,8 +29,8 @@ const Sobre = () => {
           </p>
         </div>
         <div
-          className="bg-yellow-300 mb-8 mx-auto rounded-xl py-4 px-8 
-          hover:shadow-lg hover:bg-yellow-400"
+          className="bg-yellow-400 mb-8 mx-auto rounded-xl py-4 px-8 
+          hover:shadow-2xl"
         >
           <h2 className="font-bold text-2xl text-left text-gray-900 mb-4">
             Visão
@@ -45,8 +45,8 @@ const Sobre = () => {
           </p>
         </div>
         <div
-          className="bg-yellow-300 mb-8 mx-auto rounded-xl py-4 px-8 
-          hover:shadow-ll hover:bg-yellow-400"
+          className="bg-yellow-400 mb-8 mx-auto rounded-xl py-4 px-8 
+          hover:shadow-2xl"
         >
           <h2 className="font-bold text-2xl text-left text-gray-900 mb-4">
             Valores
