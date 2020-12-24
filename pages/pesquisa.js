@@ -153,13 +153,20 @@ const Pesquisa = () => {
             w-4/5 py-3 mt-8 mx-auto rounded-md mb-4 hover:bg-yellow-600
             hover:shadow-lg focus:outline-none lg:w-3/5"
           >
-            {!saveButton && <FaSave className="mr-4"></FaSave>}
-            {saveButton && (
-              <svg class="animate-spin h-5 w-5 mr-4" viewBox="0 0 24 24">
-                <FaSpinner></FaSpinner>
-              </svg>
+            {!saveButton && (
+              <div className="flex items-center justify-evenly">
+                <FaSave className="mr-4"></FaSave>
+                <span>Salvar</span>
+              </div>
             )}
-            <span>Salvar</span>
+            {saveButton && (
+              <div className="flex items-center justify-evenly">
+                <svg class="animate-spin h-5 w-5 mr-4" viewBox="0 0 24 24">
+                  <FaSpinner></FaSpinner>
+                </svg>
+                <span>Salvando</span>
+              </div>
+            )}
           </button>
         </div>
       )}
