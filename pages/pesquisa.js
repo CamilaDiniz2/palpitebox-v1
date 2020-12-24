@@ -18,9 +18,9 @@ const Pesquisa = () => {
 
   const [sucess, setSucess] = useState(false);
   const [retorno, setRetorno] = useState({});
+  const [saveButton, SetSaveButton] = useState(false);
 
   const save = async () => {
-    const botao = document.querySelector('.botao-salvar');
     let camposSemPreenchimento = '';
     camposPesquisa.map((campo) => {
       if (form[campo] === '') {
@@ -33,16 +33,17 @@ const Pesquisa = () => {
       alert(
         `Você ainda não preencheu os seguintes campos: \n${camposSemPreenchimento}`
       );
-
       return;
     } else {
       try {
+        SetSaveButton(true);
         const response = await fetch('/api/save', {
           method: 'POST',
           body: JSON.stringify(form),
         });
 
         const data = await response.json();
+
         setSucess(true);
         setRetorno(data);
       } catch (err) {}
@@ -152,6 +153,12 @@ const Pesquisa = () => {
             w-4/5 py-3 mt-8 mx-auto rounded-md mb-4 hover:bg-yellow-600
             hover:shadow-lg focus:outline-none lg:w-3/5"
           >
+            {!saveButton && <FaSave className="mr-4"></FaSave>}
+            {saveButton && (
+              <svg class="animate-spin h-5 w-5 mr-4" viewBox="0 0 24 24">
+                <FaSpinner></FaSpinner>
+              </svg>
+            )}
             <span>Salvar</span>
           </button>
         </div>
