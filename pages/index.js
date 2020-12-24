@@ -30,7 +30,7 @@ const Index = () => {
         </p>
       )}
       {!error && data && data.showCoupon && (
-        <p className="text-black font-medium text-center w-4/5 mx-auto m-12 text-lg font-family:Roboto md:2/5">
+        <p className="text-black font-medium text-center w-4/5 mx-auto m-12 text-lg font-family:Roboto md:w-2/5">
           {data.message}
         </p>
       )}

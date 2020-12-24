@@ -161,7 +161,7 @@ const Pesquisa = () => {
         <div className="flex flex-col items-start mx-auto my-6 w-4/5 lg:w-6/12 lg:justify-start">
           <p
             className="text-center text-gray-900 font-medium mb-8 mx-2 
-          bg-yellow-200 p-4 w-4/5 mx-auto border-t-4 border-yellow-600 border-b-4"
+          p-4 w-3/5 mx-auto bg-gray-200 border-t-4 border-b-4 border-yellow-500"
           >
             Obrigado por contribuir com sua sugestão ou crítica.
           </p>
