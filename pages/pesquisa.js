@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaSave } from 'react-icons/fa';
+import { FaSave, FaSpinner } from 'react-icons/fa';
 import PageTitle from '../components/PageTitle';
 
 const Pesquisa = () => {
@@ -8,26 +8,30 @@ const Pesquisa = () => {
     Email: '',
     Whatsapp: '',
     Nota: '',
+    Opiniao: '',
   });
 
   const notas = [0, 1, 2, 3, 4, 5];
-  const camposPesquisa = ['Nome', 'Email', 'Whatsapp', 'Nota'];
-  let flagCamposPrenechidos = false;
+  const camposPesquisa = Object.keys(form);
+  camposPesquisa.pop();
+  let flagCamposNaoPreenchidos = false;
 
   const [sucess, setSucess] = useState(false);
   const [retorno, setRetorno] = useState({});
 
   const save = async () => {
-    let camposSemPreenchimento = [];
+    const botao = document.querySelector('.botao-salvar');
+    let camposSemPreenchimento = '';
     camposPesquisa.map((campo) => {
       if (form[campo] === '') {
-        flagCamposPrenechidos = true;
-        camposSemPreenchimento.push(campo);
+        flagCamposNaoPreenchidos = true;
+        camposSemPreenchimento += `${campo} \n`;
       }
     });
-    if (flagCamposPrenechidos == true) {
+
+    if (flagCamposNaoPreenchidos == true) {
       alert(
-        `Você ainda precisa preencher os seguintes dados: ${camposSemPreenchimento}`
+        `Você ainda não preencheu os seguintes campos: \n${camposSemPreenchimento}`
       );
 
       return;
@@ -66,7 +70,7 @@ const Pesquisa = () => {
 
       {!sucess && (
         <div className="flex flex-col items-start mx-auto my-6 w-4/5 lg:w-4/12 lg:justify-start">
-          <label className="font-bold mt-6 font-family: Roboto">Nome:</label>
+          <label className="font-bold mt-6 font-family: Roboto">Nome*</label>
           <input
             type="text"
             placeholder="Nome"
@@ -76,7 +80,7 @@ const Pesquisa = () => {
             className="px-4 py-4 block bg-yellow-100 placeholder-gray-500 opacity-70 rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
           />
 
-          <label className="font-bold mt-6 font-family: Roboto">E-mail:</label>
+          <label className="font-bold mt-6 font-family: Roboto">E-mail*</label>
           <input
             type="email"
             placeholder="Email"
@@ -87,7 +91,7 @@ const Pesquisa = () => {
           />
 
           <label className="font-bold mt-6 font-family: Roboto">
-            Whatsapp:
+            Whatsapp*
           </label>
           <input
             type="text"
@@ -100,15 +104,29 @@ const Pesquisa = () => {
             focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
           />
 
-          <label className="font-bold mt-6 mb-4 font-family: Roboto">
-            Nota:
+          <label className="font-bold mt-6 font-family: Roboto">
+            Críticas e sugestões de melhoria:
           </label>
-          <div className="flex justify-center mx-auto flex-wrap">
+          <textarea
+            type="text"
+            placeholder="Dê sua opinão ..."
+            name="Opiniao"
+            onChange={onChange}
+            value={form.Opiniao}
+            className="px-4 py-4 block bg-yellow-100 placeholder-gray-500 opacity-70 
+            rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 
+            focus:bg-yellow-200 focus:placeholder-gray-900 lg:w-full"
+          />
+
+          <label className="font-bold mt-6 mb-4 font-family: Roboto">
+            Nota*
+          </label>
+          <div className="flex justify-center mx-auto flex-wrap bg-yellow-100 opacity-70">
             {notas.map((nota) => {
               return (
                 <label
-                  className="flex flex-col w-1/6 px-6 py-2 text-gray-900 
-                font-bold text-center mx-auto md:px-8"
+                  className="flex flex-col w-1/6 px-6 py-4 text-gray-900 font-bold
+                  text-center mx-auto md:px-8"
                 >
                   {nota}
 
@@ -123,15 +141,17 @@ const Pesquisa = () => {
               );
             })}
           </div>
+          <p className="my-4 text-left text-sm text-gray-700">
+            Os campos com * são de preenchimento obrigatório
+          </p>
 
           <button
             onClick={save}
-            className="flex flex-row justify-center items-center bg-yellow-500 
-            text-center font-bold text-white 
-            tracking-wide uppercase w-4/5 py-3 mt-8 mx-auto rounded-md mb-4 
-            hover:bg-yellow-600 hover:shadow-lg lg:w-3/5"
+            className=" flex flex-row justify-center items-center bg-yellow-500 
+            text-center font-bold text-white outline-none tracking-wide uppercase 
+            w-4/5 py-3 mt-8 mx-auto rounded-md mb-4 hover:bg-yellow-600
+            hover:shadow-lg focus:outline-none lg:w-3/5"
           >
-            <FaSave className="mr-2"></FaSave>
             <span>Salvar</span>
           </button>
         </div>

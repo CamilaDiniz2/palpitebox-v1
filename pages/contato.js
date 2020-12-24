@@ -20,7 +20,7 @@ const Contato = () => {
           <p className="w-10/12 font-bold text-center mb-6 mx-2 text-lg text-gray-900 font-medium mx-auto md:text-2xl ">
             Nossos contatos:
           </p>
-          <div className="p-8 bg-gray-200 border-b-2 border-t-2 border-yellow-500 flex items-center mb-4 lg:w-8/12 md:justify-center  lg:mt-6">
+          <div className="p-8 bg-gray-200 border-b-2 border-t-2 border-yellow-500 flex items-center mb-4 lg:w-8/12 md:justify-center lg:mt-6">
             <FaWhatsapp className="text-2xl"></FaWhatsapp>
             <p className="pl-4 text-black font-bold"> (81) 99969-5581</p>
           </div>

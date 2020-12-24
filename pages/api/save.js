@@ -34,13 +34,14 @@ export default async (req, res) => {
       Cupom = cupomGenereator();
       Promo = textoCell.value;
     }
-    // Nome	Email	Whatsapp	Cupom	Promo
+    // Nome	Email	Whatsapp	Cupom	Promo Opiniao
     await sheet.addRow({
       Nome: data.Nome,
       Email: data.Email,
       Whatsapp: data.Whatsapp,
       Nota: parseInt(data.Nota),
       'Data Preenchimento': moment().format('DD/MM/YYYY HH:mm:ss'),
+      Opiniao: data.Opiniao,
       Cupom,
       Promo,
     });
