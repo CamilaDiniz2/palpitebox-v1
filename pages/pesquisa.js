@@ -122,7 +122,7 @@ const Pesquisa = () => {
             name="Opiniao"
             onChange={onChange}
             value={form.Opiniao}
-            className="px-4 py-4 block bg-yellow-100 placeholder-gray-500 opacity-70 
+            className="px-4 py-4 h-32 block resize-none bg-yellow-100 placeholder-gray-500 opacity-70 
             rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 
             focus:bg-yellow-200 focus:placeholder-gray-900 lg:w-full"
           />
