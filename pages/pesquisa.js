@@ -71,8 +71,11 @@ const Pesquisa = () => {
 
       {!sucess && (
         <div className="flex flex-col items-start mx-auto my-6 w-4/5 lg:w-4/12 lg:justify-start">
-          <label className="font-bold mt-6 font-family: Roboto">Nome*</label>
+          <label for="nome" className="font-bold mt-6 font-family: Roboto">
+            Nome*
+          </label>
           <input
+            id="nome"
             type="text"
             placeholder="Nome"
             name="Nome"
@@ -81,8 +84,11 @@ const Pesquisa = () => {
             className="px-4 py-4 block bg-yellow-100 placeholder-gray-500 opacity-70 rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
           />
 
-          <label className="font-bold mt-6 font-family: Roboto">E-mail*</label>
+          <label for="email" className="font-bold mt-6 font-family: Roboto">
+            E-mail*
+          </label>
           <input
+            id="email"
             type="email"
             placeholder="Email"
             name="Email"
@@ -91,10 +97,11 @@ const Pesquisa = () => {
             className="px-4 py-4 block bg-yellow-100 placeholder-gray-500 opacity-70 rounded-md w-full my-2 focus:outline-none focus:shadow-lg focus:opacity-100 focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
           />
 
-          <label className="font-bold mt-6 font-family: Roboto">
+          <label for="whatsapp" className="font-bold mt-6 font-family: Roboto">
             Whatsapp*
           </label>
           <input
+            id="whatsapp"
             type="text"
             placeholder="Whatsapp"
             name="Whatsapp"
@@ -105,10 +112,11 @@ const Pesquisa = () => {
             focus:bg-yellow-200 focus:placeholder-gray-700 lg:w-full"
           />
 
-          <label className="font-bold mt-6 font-family: Roboto">
+          <label for="criticas" className="font-bold mt-6 font-family: Roboto">
             Críticas e sugestões de melhoria:
           </label>
           <textarea
+            id="criticas"
             type="text"
             placeholder="Dê sua opinão ..."
             name="Opiniao"
@@ -130,7 +138,6 @@ const Pesquisa = () => {
                   text-center mx-auto md:px-8"
                 >
                   {nota}
-
                   <input
                     className="text-center"
                     type="radio"
